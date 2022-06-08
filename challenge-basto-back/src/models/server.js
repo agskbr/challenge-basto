@@ -7,7 +7,9 @@ const dbConnection = require("../database/configDB");
 function Server() {
   this.app = express();
   this.port = process.env.PORT;
-  this.paths = {};
+  this.paths = {
+    animals: "/api/animals",
+  };
 
   //Config db
   this.connectToDB();
@@ -24,7 +26,7 @@ Server.prototype.connectToDB = async function () {
 };
 
 Server.prototype.configRoutes = function () {
-  //   this.app.use(this.paths.);
+  this.app.use(this.paths.animals, require("../routes/animals"));
 };
 
 Server.prototype.configMiddlewares = function () {
