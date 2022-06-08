@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 const AnimalSchema = new Schema({
   ID_SENASA: {
@@ -16,12 +16,15 @@ const AnimalSchema = new Schema({
     type: Number,
     required: true,
   },
-  device: {
-    type: Map,
-    of: new Schema({
-      type: { type: String, required: true, enum: ["COLLAR", "CARAVANA"] },
-      number: { type: String, required: true, maxlength: 8 },
-    }),
+  deviceType: {
+    type: String,
+    required: true,
+    enum: ["COLLAR", "CARAVANA"],
+  },
+  deviceNum: {
+    type: String,
+    required: true,
+    maxlength: 8,
   },
 });
 
