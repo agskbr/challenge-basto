@@ -2,12 +2,13 @@ const { Animal } = require("../models");
 
 const createAnimal = async (req, res) => {
   try {
-    const { senasaId, type, weight, device } = req.body;
+    const { senasaId, type, weight, deviceType, deviceNum } = req.body;
     const createdAnimal = await Animal.create({
-      senasaId,
+      ID_SENASA: senasaId,
       type,
       weight,
-      device,
+      deviceType,
+      deviceNum,
     });
     res.json({ created: true, createdAnimal });
   } catch (error) {
