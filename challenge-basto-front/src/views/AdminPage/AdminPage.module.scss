@@ -1,0 +1,31 @@
+@import "../../helpers/theme";
+
+.principalContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary-color;
+
+  .bodyContent {
+    display: flex;
+    padding-left: 85px;
+    align-items: flex-start;
+    flex-direction: column;
+    .routeDynamicText {
+      padding-top: 30px;
+      span {
+        color: $accent-color;
+        font-family: sans-serif;
+      }
+    }
+    .bodyTitle {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      span {
+        color: $font-color;
+        font-weight: 600;
+        font-family: sans-serif;
+        font-size: 25px;
+      }
+    }
+  }
+}
