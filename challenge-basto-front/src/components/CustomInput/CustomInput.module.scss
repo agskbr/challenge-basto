@@ -1,0 +1,27 @@
+@import "../../helpers/theme";
+
+.customInput {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: $primary-color;
+  span {
+    padding-top: 20px;
+    color: $font-color;
+  }
+  .inputContainer {
+    padding-top: 20px;
+    input {
+      width: 50vw;
+      padding: 10px;
+      border: 1px solid #e4e6e9;
+      color: #dddddd;
+      border-radius: 2.5px;
+      margin-right: 10px;
+      &:focus {
+        outline-color: $accent-color;
+        color: $font-color;
+      }
+    }
+  }
+}

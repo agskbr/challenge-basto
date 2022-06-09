@@ -1,0 +1,10 @@
+@import "../../helpers/theme";
+
+.customBtn {
+  background-color: $accent-color;
+  border: none;
+  border-radius: 2.5px;
+  padding: 10px;
+  font-size: 12px;
+  color: $secondary-color;
+}
