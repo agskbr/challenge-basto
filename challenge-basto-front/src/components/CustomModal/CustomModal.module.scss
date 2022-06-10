@@ -1,0 +1,30 @@
+@import "../../helpers/theme";
+dialog {
+  width: 35vw;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 15px 15px 20px #e9eaeb;
+  .modalHeader {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-size: 25px;
+      font-weight: 700;
+      color: $font-color;
+    }
+    .closeBtn {
+      color: $accent-color;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .divider {
+    height: 2.5px;
+    width: 100%;
+    background-color: #e4e6e9;
+  }
+}
