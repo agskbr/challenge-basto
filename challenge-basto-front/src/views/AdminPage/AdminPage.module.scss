@@ -1,13 +1,12 @@
 @import "../../helpers/theme";
 
 .principalContainer {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   background-color: $primary-color;
-
   .bodyContent {
     display: flex;
     padding-left: 85px;
+    padding-right: 85px;
     align-items: flex-start;
     flex-direction: column;
     .routeDynamicText {
