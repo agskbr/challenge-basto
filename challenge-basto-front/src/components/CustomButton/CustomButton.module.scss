@@ -7,4 +7,10 @@
   padding: 10px;
   font-size: 12px;
   color: $secondary-color;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
 }
