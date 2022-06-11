@@ -34,7 +34,7 @@ export default function CustomModal() {
     <dialog id="customDialog">
       <div className={style.dialogContainer}>
         <div className={style.modalHeader}>
-          <span>Nuevo Dispositivo</span>
+          <span>Nuevo Registro</span>
           <MdHighlightOff
             onClick={() => document.getElementById("customDialog").close()}
             size={30}

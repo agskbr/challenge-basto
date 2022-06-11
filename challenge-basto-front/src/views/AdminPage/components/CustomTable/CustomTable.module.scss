@@ -69,6 +69,7 @@
       background-color: $secondary-color;
       color: $font-color;
       border: 1px solid #e4e6e9;
+      user-select: none;
       &:hover {
         cursor: pointer;
         border: 1px solid $font-color;
@@ -79,6 +80,7 @@
       padding: 10px;
       background-color: $secondary-color;
       color: $font-color;
+      user-select: none;
       border: 1px solid #e4e6e9;
       &:hover {
         cursor: pointer;
@@ -105,6 +107,7 @@
     }
     .disabledPaginatedBtn {
       padding: 10px;
+      user-select: none;
       background-color: $secondary-color;
       border: 1px solid #e4e6e9;
       color: #b3b8c2;
