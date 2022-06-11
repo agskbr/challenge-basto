@@ -1,4 +1,4 @@
-@import "../../helpers/theme";
+@import "../../../../helpers/theme/theme";
 dialog {
   border: none;
   box-shadow: 5px 5px 8px #cacbcc;
@@ -43,9 +43,13 @@ dialog {
           color: $font-color;
           font-weight: 600;
         }
+        span {
+          color: red;
+          font-size: 12px;
+          padding-bottom: 20px;
+        }
         input {
           margin-top: 20px;
-          margin-bottom: 10px;
           border: 1px solid #e4e6e9;
           color: $font-color;
           background-color: $primary-color;
@@ -58,7 +62,6 @@ dialog {
         }
         select {
           margin-top: 20px;
-          margin-bottom: 10px;
           border: 1px solid #e4e6e9;
           background-color: $primary-color;
           color: $font-color;

@@ -1,4 +1,4 @@
-@import "../../helpers/theme";
+@import "../../../../helpers/theme/theme";
 .tableContainer {
   flex-direction: column;
   display: flex;
@@ -20,6 +20,7 @@
         border-bottom: 1px solid #dddddd;
         td {
           padding: 12px;
+          font-size: 14px;
           color: $font-color;
           font-weight: bold;
         }
@@ -31,8 +32,10 @@
         border-bottom: 1px solid #dddddd;
         td {
           color: #b3b8c2;
+          font-size: 12px;
           padding: 12px;
           div {
+            display: flex;
             .editActionIcon {
               color: $accent-color;
               padding-left: 10px;
