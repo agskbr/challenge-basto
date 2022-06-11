@@ -1,6 +1,5 @@
 import style from "./CustomTable.module.scss";
 import { MdDelete, MdEditNote } from "react-icons/md";
-import CustomModal from "../CustomModal/CustomModal";
 
 export default function CustomTable({ tableTitle }) {
   return (
@@ -11,12 +10,12 @@ export default function CustomTable({ tableTitle }) {
       <table>
         <thead>
           <tr>
-            <td>ID</td>
-            <td>Nombre</td>
-            <td>N° de registro</td>
-            <td>Cant. de animales</td>
-            <td>Hectáreas</td>
-            <td>Cant. de potreros</td>
+            <td>ID SENASA</td>
+            <td>Tipo Animal</td>
+            <td>Peso Animal</td>
+            <td>Nombre potrero</td>
+            <td>Tipo dispositivo</td>
+            <td>Nro dispositivo</td>
             <td>Creación</td>
             <td>Actualización</td>
             <td>Acciones</td>
