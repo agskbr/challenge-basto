@@ -71,6 +71,8 @@
       border: 1px solid #e4e6e9;
       &:hover {
         cursor: pointer;
+        border: 1px solid $font-color;
+        transition: border 300ms;
       }
     }
     .prevBtn {
@@ -80,6 +82,8 @@
       border: 1px solid #e4e6e9;
       &:hover {
         cursor: pointer;
+        border: 1px solid $font-color;
+        transition: border 300ms;
       }
     }
     .page {
@@ -89,9 +93,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      &:hover {
-        cursor: pointer;
-      }
     }
     .activePage {
       background-color: #172a47;
