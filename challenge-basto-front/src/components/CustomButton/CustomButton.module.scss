@@ -1,4 +1,4 @@
-@import "../../helpers/theme";
+@import "../../helpers/theme/theme";
 
 .customBtn {
   background-color: $accent-color;
@@ -13,4 +13,13 @@
   &:focus {
     outline: none;
   }
+}
+
+.disabledBtn {
+  background-color: #dddddd;
+  border: none;
+  border-radius: 2.5px;
+  padding: 10px;
+  font-size: 12px;
+  color: $secondary-color;
 }
