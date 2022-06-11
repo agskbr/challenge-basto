@@ -104,6 +104,13 @@ export default function CustomModal() {
                         weight: parseInt(input.weight),
                       })
                     );
+                    setInput({
+                      senasaId: "",
+                      type: "",
+                      weight: "",
+                      deviceType: "",
+                      deviceNum: "",
+                    });
                     document.getElementById("customDialog").close();
                   }
                 }}
