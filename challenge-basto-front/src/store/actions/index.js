@@ -3,6 +3,7 @@ import {
   GET_ALL_ANIMALS,
   GET_ANIMAl_BY_ID,
   REQUEST_POST,
+  FIND_ANIMAL_BY_TYPE,
 } from "../actions-type/types";
 import swal from "sweetalert";
 
@@ -96,6 +97,16 @@ const deleteAnimal = (id) => {
   };
 };
 
+const findAnimalByType = (type) => {
+  return (dispatch) => {
+    //When remove text from search bar fullfilled animals state again
+    if (type.trim() === "") {
+      dispatch(getAllAnimals());
+    }
+    dispatch({ type: FIND_ANIMAL_BY_TYPE, payload: type.trim() });
+  };
+};
+
 const requestPost = () => {
   return { type: REQUEST_POST };
 };
@@ -107,4 +118,5 @@ export {
   updateAnimal,
   deleteAnimal,
   requestPost,
+  findAnimalByType,
 };
