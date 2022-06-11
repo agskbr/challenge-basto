@@ -55,9 +55,19 @@ const updateAnimal = (id, animal) => {
   return async (dispatch) => {
     try {
       await axios.put(`${base_url}/animals/${id}`, animal);
+      swal({
+        title: "Se editó el registro correctamente",
+        buttons: "Aceptar",
+        icon: "success",
+      });
       dispatch(getAllAnimals());
     } catch (error) {
       console.log(error);
+      swal({
+        title: "Algo salió mal al editar el registro",
+        buttons: "Aceptar",
+        icon: "error",
+      });
     }
   };
 };
