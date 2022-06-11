@@ -1,4 +1,5 @@
 import {
+  FIND_ANIMAL_BY_TYPE,
   GET_ALL_ANIMALS,
   GET_ANIMAl_BY_ID,
   RECEIVED_POST,
@@ -21,6 +22,13 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         animal: action.payload,
+      };
+    case FIND_ANIMAL_BY_TYPE:
+      return {
+        ...state,
+        animals: state.animals.filter((animal) =>
+          animal.type.toLowerCase().includes(action.payload)
+        ),
       };
     case REQUEST_POST:
       return {
