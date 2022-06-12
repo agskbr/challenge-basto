@@ -29,7 +29,7 @@ export default function AdminPage() {
         />
         <CustomInput
           titleInput="Tipo animal / Número de registro"
-          label="Tipo animal / Número de registro"
+          label="Podes buscar por tipo animal"
         />
         <CustomModal />
         <CustomTable tableTitle="Lista de establecimientos" />
